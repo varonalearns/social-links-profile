@@ -67,7 +67,7 @@ li {
 li:last-child {
     margin-bottom: 0;
 }
-li:hover
+li:hover,
 li:focus {
     background-color: var(--green);
     cursor: pointer;
