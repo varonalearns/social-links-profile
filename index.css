@@ -1,0 +1,99 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+/* Typography */
+@font-face {
+    font-family: "Inter";
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+body {
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--off-black);
+}
+
+/* Layout */
+main {
+    margin: 116px 24px;
+    background-color: var(--dark-grey);
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto 24px auto;
+    border-radius: 100%;
+    width: 88px;
+}
+h1 {
+    font-size: 24px;
+    margin-bottom:  12px;
+}
+p {
+    margin-bottom: 24px;
+}
+.green-txt {
+    color: var(--green);
+    font-weight: bold;
+}
+
+/* navigation menu */
+ul {
+    list-style-type: none;
+}
+li {
+    font-weight: bold;
+    margin-bottom: 14px;
+    background-color: var(--grey);
+    border-radius: 8px;
+    padding: 11px;
+}
+li:last-child {
+    margin-bottom: 0;
+}
+li:hover
+li:focus {
+    background-color: var(--green);
+    cursor: pointer;
+}
+nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    margin: auto 24px;
+}
+.attribution a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+/*--------------- Desktop Styles --------------- */
+@media screen and (min-width: 1440px) {
+    main {
+        padding: 40px;
+        width: 384px;
+    }
+    /* footer */
+    footer {
+        margin-bottom: 40px;
+    }
+}
